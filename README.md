@@ -1,7 +1,7 @@
 [![Project test & build](https://github.com/stLucky/League-of-heroes/actions/workflows/main.yml/badge.svg)](https://github.com/stLucky/League-of-heroes/actions/workflows/main.yml)
 # League of heroes - бесплатная браузерная MMORPG (Тестовое задание)
 **Landing page  фиксированной ширины под минимальную ширину устройств - 1920px**  
-https://stlucky.github.io/FunBox/
+https://stlucky.github.io/League-of-heroes/
 ## Основные команды для работы
 * Установка - `npm i`
 * Запуск локального сервера - `npm start`
