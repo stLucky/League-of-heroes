@@ -1,0 +1,118 @@
+$bg-play-width: 565px;
+$bg-play-height: 234px;
+
+$bg-arrow-width: 102px;
+$bg-arrow-height: 66px;
+
+$bg-icon-width: 140px;
+$bg-icon-height: 139px;
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translate(-50%, -50%);
+    transition: background-image $transition-duration ease;
+    pointer-events: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--play {
+    width: 421px;
+    height: 134px;
+
+    &::before {
+      width: $bg-play-width;
+      height: $bg-play-height;
+      background-image: url("../img/btn-play__normal.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/btn-play__normal@2x.png");
+      }
+    }
+
+    &:hover {
+      &::before {
+        background-image: url("../img/btn-play__hover.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/btn-play__hover@2x.png");
+        }
+      }
+    }
+
+    &:active {
+      &::before {
+        background-image: url("../img/btn-play__active.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/btn-play__active@2x.png");
+        }
+      }
+    }
+  }
+
+  &--arrow {
+    width: 70px;
+    height: 30px;
+
+    &::before {
+      width: $bg-arrow-width;
+      height: $bg-arrow-height;
+      background-image: url("../img/btn-scroll__normal.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/btn-scroll__normal@2x.png");
+      }
+    }
+
+    &:hover {
+      &::before {
+        background-image: url("../img/btn-scroll__hover.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/btn-scroll__hover@2x.png");
+        }
+      }
+    }
+
+    &:active {
+      &::before {
+        background-image: url("../img/btn-scroll__active.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/btn-scroll__active@2x.png");
+        }
+      }
+    }
+  }
+
+  &--icon {
+    display: flex;
+    width: 140px;
+    height: 130px;
+
+    &::before {
+      top: 0;
+      width: $bg-icon-width;
+      height: $bg-icon-height;
+      transform: translate(-50%, 0);
+    }
+  }
+}

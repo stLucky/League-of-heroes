@@ -1,0 +1,49 @@
+$mount-height: 993px;
+
+.mount {
+  position: relative;
+  height: $mount-height;
+  padding: $sect-top-padding 0 $sect-bottom-padding;
+  overflow: hidden;
+  background-color: $mount-bg;
+}
+
+.mount__title {
+  position: relative;
+  z-index: $base-index + 1;
+  margin: 0 0 450px;
+}
+
+.mount__ratings {
+  @include list-reset;
+  position: relative;
+  z-index: $base-index + 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.mount__desc {
+  position: relative;
+  z-index: $base-index + 1;
+  margin: 0 0 50px;
+  font-size: 24px;
+  color: $beige-light;
+}
+
+.mount__level {
+  margin: -40px 0 0;
+  font-size: 24px;
+  line-height: 1.167;
+  color: $yellow-basic;
+  text-shadow: 0 5px 30px $text-shadow;
+}
+
+.mount__arrow {
+  z-index: $base-index + 1;
+}
+
+.mount__background {
+  @include bg-section;
+}

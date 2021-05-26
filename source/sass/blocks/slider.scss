@@ -1,0 +1,126 @@
+$btn-offset: 70px;
+
+.slider__slide {
+  display: none;
+
+  &--current {
+    display: block;
+  }
+}
+
+.slider__pagination {
+  margin: 70px -50px 0 0;
+}
+
+.slider__bullet {
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--isolda {
+    &::before {
+      background-image: url("../img/chars-icon__Isolda_inactive.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/chars-icon__Isolda_inactive@2x.png");
+      }
+    }
+
+    &:hover:not(.slider__bullet--isolda-active) {
+      &::before {
+        background-image: url("../img/chars-icon__Isolda_hover.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/chars-icon__Isolda_hover@2x.png");
+        }
+      }
+    }
+  }
+
+  &--isolda-active {
+    &::before {
+      background-image: url("../img/chars-icon__Isolda_active.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/chars-icon__Isolda_active@2x.png");
+      }
+    }
+  }
+
+  &--pamela {
+    &::before {
+      background-image: url("../img/chars-icon__Pamela_inactive.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/chars-icon__Pamela_inactive@2x.png");
+      }
+    }
+
+    &:hover:not(.slider__bullet--pamela-active) {
+      &::before {
+        background-image: url("../img/chars-icon__Pamela_hover.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/chars-icon__Pamela_hover@2x.png");
+        }
+      }
+    }
+  }
+
+  &--pamela-active {
+    &::before {
+      background-image: url("../img/chars-icon__Pamela_active.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/chars-icon__Pamela_active@2x.png");
+      }
+    }
+  }
+
+  &--lleyn {
+    &::before {
+      background-image: url("../img/chars-icon__Lleyn_inactive.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/chars-icon__Lleyn_inactive@2x.png");
+      }
+    }
+
+    &:hover:not(.slider__bullet--lleyn-active) {
+      &::before {
+        background-image: url("../img/chars-icon__Lleyn_hover.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/chars-icon__Lleyn_hover@2x.png");
+        }
+      }
+    }
+  }
+
+  &--lleyn-active {
+    &::before {
+      background-image: url("../img/chars-icon__Lleyn_active.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/chars-icon__Lleyn_active@2x.png");
+      }
+    }
+  }
+}
+
+.slider__btn {
+  position: absolute;
+  top: calc(50% - 100px);
+
+  &--prev {
+    left: $btn-offset;
+    transform: rotate(90deg);
+  }
+
+  &--next {
+    right: $btn-offset;
+    transform: rotate(-90deg);
+  }
+}

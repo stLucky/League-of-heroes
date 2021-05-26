@@ -1,0 +1,12 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Lora";
+
+  font-display: swap;
+  src: local("Lora"),
+    local("Lora Regular"),
+    local("Lora-Regular"),
+    url("../fonts/Lora-Regular.woff2") format("woff2"),
+    url("../fonts/Lora-Regular.woff") format("woff");
+}

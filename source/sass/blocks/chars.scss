@@ -1,0 +1,44 @@
+$chars-height: 949px;
+$content-max-width: 1150px;
+
+.chars {
+  position: relative;
+  height: $chars-height;
+  padding: $sect-top-padding 0 $sect-bottom-padding;
+  overflow: hidden;
+  background-color: $chars-bg;
+}
+
+.chars__container {
+  max-width: $content-max-width;
+}
+
+.chars__inner {
+  display: flex;
+  justify-content: space-between;
+  min-height: 570px;
+  margin: -90px auto 70px;
+}
+
+.chars__title {
+  position: relative;
+  z-index: $base-index + 1;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.chars__title-content {
+  width: 819px;
+  height: 148px;
+}
+
+.chars__list {
+  @include list-reset;
+}
+
+.chars__desc {
+  position: relative;
+  margin: 0 auto 40px;
+  font-size: 24px;
+  color: $beige-light;
+}

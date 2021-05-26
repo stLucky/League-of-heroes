@@ -1,0 +1,45 @@
+$header-height: 966px;
+
+.header {
+  position: relative;
+  height: $header-height;
+  padding-bottom: $sect-bottom-padding;
+  overflow: hidden;
+  background-color: $header-bg;
+}
+
+.header__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header__background {
+  @include bg-section;
+}
+
+.header__logo {
+  position: relative;
+  width: 652px;
+  height: 333px;
+}
+
+.header__promo {
+  position: relative;
+  display: inline-block;
+  width: 829px;
+  height: 230px;
+  margin: -30px 0 30px;
+}
+
+.header__btn {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.header__text {
+  position: relative;
+  max-width: 942px;
+  margin: 0 auto 40px;
+  font-size: 24px;
+  color: $gray-light;
+}

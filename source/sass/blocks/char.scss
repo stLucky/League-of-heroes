@@ -1,0 +1,198 @@
+$skill-size: 58px;
+
+.char--isolda {
+  .char__clan {
+    color: $red-basic;
+
+    &::before {
+      width: 25px;
+      height: 32px;
+      background-image: url("../img/chars-fraction__Isolda.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/chars-fraction__Isolda@2x.png");
+      }
+    }
+  }
+
+  .char__skill {
+    &--first {
+      &::before {
+        background-image: url("../img/chars-skill__Isolda_1.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/chars-skill__Isolda_1@2x.png");
+        }
+      }
+    }
+
+    &--second {
+      &::before {
+        background-image: url("../img/chars-skill__Isolda_2.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/chars-skill__Isolda_2@2x.png");
+        }
+      }
+    }
+  }
+}
+
+.char--pamela {
+  .char__content {
+    max-width: 430px;
+  }
+
+  .char__clan {
+    color: $purple-basic;
+
+    &::before {
+      width: 28px;
+      height: 29px;
+      background-image: url("../img/chars-fraction__Pamela.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/chars-fraction__Pamela@2x.png");
+      }
+    }
+  }
+
+  .char__skill {
+    &--first {
+      &::before {
+        background-image: url("../img/chars-skill__Pamela_1.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/chars-skill__Pamela_1@2x.png");
+        }
+      }
+    }
+
+    &--second {
+      &::before {
+        background-image: url("../img/chars-skill__Pamela_2.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/chars-skill__Pamela_2@2x.png");
+        }
+      }
+    }
+  }
+}
+
+.char--lleyn {
+  .char__clan {
+    color: $yellow-basic;
+
+    &::before {
+      width: 28px;
+      height: 29px;
+      background-image: url("../img/chars-fraction__Lleyn.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/chars-fraction__Lleyn@2x.png");
+      }
+    }
+  }
+
+  .char__skill {
+    &--first {
+      &::before {
+        background-image: url("../img/chars-skill__Lleyn_1.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/chars-skill__Lleyn_1@2x.png");
+        }
+      }
+    }
+
+    &--second {
+      &::before {
+        background-image: url("../img/chars-skill__Lleyn_2.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/chars-skill__Lleyn_2@2x.png");
+        }
+      }
+    }
+  }
+}
+
+.char__content {
+  position: relative;
+  z-index: $base-index + 1;
+  max-width: 410px;
+  text-align: left;
+}
+
+.char__title {
+  margin: 0 0 0 -44px;
+}
+
+.char__title-content {
+  width: 466px;
+  height: 179px;
+}
+
+.char__clan {
+  display: flex;
+  align-items: center;
+  margin: -40px 0 20px;
+  font-size: 21px;
+  line-height: 1.333;
+
+  text-shadow: 0 5px 30px $text-shadow;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.char__desc {
+  margin: 0 0 20px;
+  font-size: 24px;
+  color: $white-extra;
+  text-shadow: 0 5px 30px $text-shadow;
+}
+
+.char__skills {
+  margin: 0;
+}
+
+.char__skill {
+  display: grid;
+  margin-bottom: 10px;
+  column-gap: 20px;
+  grid-template-columns: $skill-size 1fr;
+
+  &::before {
+    content: "";
+    width: $skill-size;
+    height: $skill-size;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    grid-row: 1/3;
+  }
+}
+
+.char__skill-term {
+  font-size: 24px;
+  color: $white-extra;
+  grid-column: 2/3;
+}
+
+.char__skill-definition {
+  margin: 0;
+  font-size: 16px;
+  color: $gray-basic;
+  grid-column: 2/3;
+}
+
+.char__background {
+  @include bg-section;
+}

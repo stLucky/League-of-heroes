@@ -1,0 +1,111 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.social__content {
+  position: relative;
+  display: block;
+  width: 83px;
+  height: 91px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image $transition-duration ease;
+
+  &--fb {
+    background-image: url("../img/footer__fb_normal.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/footer__fb_normal@2x.png");
+    }
+
+    &:hover {
+      background-image: url("../img/footer__fb_hover.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/footer__fb_hover@2x.png");
+      }
+    }
+
+    &:active {
+      background-image: url("../img/footer__fb_active.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/footer__fb_active@2x.png");
+      }
+    }
+  }
+
+  &--vk {
+    background-image: url("../img/footer__vk_normal.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/footer__vk_normal@2x.png");
+    }
+
+    &:hover {
+      background-image: url("../img/footer__vk_hover.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/footer__vk_hover@2x.png");
+      }
+    }
+
+    &:active {
+      background-image: url("../img/footer__vk_active.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/footer__vk_active@2x.png");
+      }
+    }
+  }
+
+  &--ok {
+    background-image: url("../img/footer__ok_normal.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/footer__ok_normal@2x.png");
+    }
+
+    &:hover {
+      background-image: url("../img/footer__ok_hover.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/footer__ok_hover@2x.png");
+      }
+    }
+
+    &:active {
+      background-image: url("../img/footer__ok_active.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/footer__ok_active@2x.png");
+      }
+    }
+  }
+
+  &--mail {
+    background-image: url("../img/footer__mail_normal.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/footer__mail_normal@2x.png");
+    }
+
+    &:hover {
+      background-image: url("../img/footer__mail_hover.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/footer__mail_hover@2x.png");
+      }
+    }
+
+    &:active {
+      background-image: url("../img/footer__mail_active.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/footer__mail_active@2x.png");
+      }
+    }
+  }
+}

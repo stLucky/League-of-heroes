@@ -1,0 +1,27 @@
+// Normalize
+
+@import "normalize";
+
+
+// Global
+
+@import "global/variables";
+@import "global/global";
+@import "global/fonts";
+@import "global/mixins";
+
+// Blocks
+
+@import "blocks/focus-visible";
+@import "blocks/visually-hidden";
+@import "blocks/btn";
+@import "blocks/container";
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/chars";
+@import "blocks/char";
+@import "blocks/slider";
+@import "blocks/events";
+@import "blocks/mount";
+@import "blocks/footer";
+@import "blocks/social";
