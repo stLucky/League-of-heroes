@@ -5,7 +5,7 @@ https://stlucky.github.io/League-of-heroes/
 ## Основные команды для работы
 * Установка - `npm i`
 * Запуск локального сервера - `npm start`
-* Сборка проекта в production режиме - `npm run-script build`
+* Сборка проекта в production режиме - `npm run build`
 * Запуск тестирования на соответствия код-гайдам - `npm test`
 ## Ключевые особенности проекта
 * сборка проекта осуществляется совместно gulp и webpack:
